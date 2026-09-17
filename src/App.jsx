@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -85,6 +86,8 @@ export default function App() {
           </div>
         )}
       </main>
+
+      <Footer />
 
       <ToastContainer position="bottom-right" autoClose={2500} />
     </div>
