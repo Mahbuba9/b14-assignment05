@@ -8,7 +8,13 @@ export default function TechCard({ tech, isAdded, onAdd }) {
   const badge = tech.badge;
 
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col hover:shadow-md transition-shadow">
+    <div
+  className={
+    isAdded
+      ? "bg-white border-2 border-pink-400 rounded-2xl p-5 flex flex-col shadow-md transition-all"
+      : "bg-white border border-gray-200 rounded-2xl p-5 flex flex-col hover:shadow-md transition-all"
+      }
+    >
       <div className="flex items-start justify-between">
         <img src={icon} alt={name + " logo"} className="w-9 h-9 object-contain" />
 
